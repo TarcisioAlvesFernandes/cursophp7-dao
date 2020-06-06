@@ -36,17 +36,25 @@ $sql = new Sql();
 //$aluno->insert("aluno", "@lun0");
 //echo $aluno;
 
-$aluno = new Usuario();
-$aluno->insert("aluno354","@lun0898");
-$aluno->login("aluno354","@lun0898");
-echo $aluno;
+//Criando um novo usuario
+//$aluno = new Usuario();
+//$aluno->insert("aluno354","@lun0898");
+//$aluno->login("aluno354","@lun0898");
+//echo $aluno;
 
-/*
+//Alterar Usuario
+//$usuario = new Usuario();
+//$usuario->loadById(4);
+//$usuario->update("professor", "!@#$%%");
+//echo $usuario;
+
+
 $usuario = new Usuario();
-$usuario->loadById(4);
-$usuario->update("professor", "!@#$%%");
+
+$usuario->loadById(18);
+$usuario->delete();
+
 echo $usuario;
-*/
 
 
 
