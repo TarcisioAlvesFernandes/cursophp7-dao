@@ -26,10 +26,28 @@ $sql = new Sql();
 //echo json_encode($search);
 
 //Carrega um usuario usando o login e a senha
-$usuario = new Usuario();
-$usuario->login("jose","1234567890");
+//$usuario = new Usuario();
+//$usuario->login("jose","1234567890");
+//echo $usuario;
 
+//Criando um novo usuario
+//Não está funcionando
+//$aluno = new Usuario();
+//$aluno->insert("aluno", "@lun0");
+//echo $aluno;
+
+$aluno = new Usuario();
+$aluno->insert("aluno354","@lun0898");
+$aluno->login("aluno354","@lun0898");
+echo $aluno;
+
+/*
+$usuario = new Usuario();
+$usuario->loadById(4);
+$usuario->update("professor", "!@#$%%");
 echo $usuario;
+*/
+
 
 
 ?>
